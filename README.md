@@ -68,6 +68,18 @@ cd concert-ticket-frontend
 npm run dev
 ```
 
+### Sign In (Mock Users)
+
+```bash
+  username: 'admin'
+  password: 'P@ssw0rd'
+```
+
+```bash
+  username: 'user'
+  password: 'P@ssw0rd'
+```
+
 ---
 
 ## ✅ Running Tests
