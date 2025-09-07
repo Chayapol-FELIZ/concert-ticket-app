@@ -6,7 +6,7 @@ A full-stack web application for managing concert seat reservations, built with 
 
 ## 📦 Tech Stack
 
-- **Frontend:** React (Next.js), TailwindCSS, React Query
+- **Frontend:** React (Next.js), TailwindCSS, React Query, Redux
 - **Backend:** NestJS, MongoDB, Mongoose
 
 ---
