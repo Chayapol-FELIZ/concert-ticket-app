@@ -82,6 +82,34 @@ npm run dev
 
 ---
 
+## An Overview About the Design of the Application’s Architecture
+Database:
+	•	Uses MongoDB
+	•	Collections:
+	    •	concerts – Stores concert details.
+	    •	reservations – Tracks individual user reservations with statuses.
+	    •	reservationlogs – Keeps an audit trail for actions like “reserve” and “cancel”.
+
+Schema Relationships:
+	•	Reservation refers to:
+	    •	a User by ID (UUID string)
+	    •	a Concert by ObjectId
+	•	ReservationLog captures a snapshot of actions (userId, action, concert reference)
+
+Frontend Integration:
+	•	Frontend (assumed to be Next.js) communicates via REST APIs.
+	•	Each reservation action is handled via endpoints
+
+---
+
+## Frontend (Next.js + React + Tailwind CSS)
+Next.js, React, Tailwind CSS, Axios, @tanstack/react-query, Redux Toolkit, React Hook Form + Zod, Material UI Icons
+
+## Backend (NestJS + MongoDB + Mongoose)
+NestJS, @nestjs/core, @nestjs/common, @nestjs/mongoose
+
+---
+
 ## ✅ Running Tests
 
 ```bash
