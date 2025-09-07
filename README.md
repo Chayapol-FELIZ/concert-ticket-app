@@ -86,8 +86,8 @@ npm run dev
 
 ```bash
 # Backend tests
-cd backend
-npm run test
+cd concert-ticket-backend
+npm run test concerts.service.spec.ts
 ```
 
 ---
